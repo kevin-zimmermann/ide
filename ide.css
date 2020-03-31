@@ -117,8 +117,8 @@ main .block-two{
 
 }
 main .block-bottom{
-    width: 50%;
-    text-align: center;
+
+    display: flex;
     margin: 0 25%;
 }
 main .block-photo{
@@ -161,7 +161,7 @@ footer{
 
 }
 
-@media screen and (max-width: 600px) {
+@media  (max-width: 700px) {
     .block-photo,.block-total{
       flex-direction: column;
 
@@ -173,9 +173,16 @@ footer{
     }
     .block-total{
         margin: 0 25px;
+        display: flex;
+        justify-content: center;
     }
     .block-total .block-one:nth-child(odd){
         padding-right: 0px;
     
     }
+    main .block-bottom{
+    margin:0      
+        }
+
+    
   }
