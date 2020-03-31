@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+:root{
+
+    --var-color-active:white;
+    --var-size-font-title: 68px;
+
+    
+
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width:100px ;
+    background:#eceff1 ;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.top{
+    background: black ;
+}
+
+.logo-top{
+    text-align: center;
+}
+
+.logo-top i{
+    padding:15px 0 ;
+
+}
+
+header nav{
+    background-color:black;
+    text-decoration: white;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -16px;
+
+    
+}
+
+header{
+    position: sticky;
+    top: -162px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 10px; 
+    font-size: x-large;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header nav ul{
+    line-height: 50px;
+    padding: 0;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#24acf2;
+    padding: 5px 5px;
+    border-radius: 3px;
+
+}
+
+header nav a:hover{
+    opacity: 0.5;
+
+}
+
+.is-active{
+    background-color:var(--var-color-active);
+}
+
+
+
+a{
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #24acf2;
+
+}
+
+main{
+    max-width: 100%;
+    width: 100%;
+    background: #dfdfdf ;
+}
+
+.big-block{
+    max-width: 1500px;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.topmain{
+    margin: 20px;
+    background-color: white;
+    border:1px solid #24acf2;
+    border-radius: 20px;
+     padding: 10px;
+}
+
+main .title{
+    font-size: var(--var-size-font-title) ;
+    font-family: 'Bebas Neue', cursive;
+    color: #24acf2 ;
+    justify-content: center;
+    padding-left:30px ;
+}
+main .headertop img{
+    max-width: 180px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+}
+
+main .topoftop{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+main .slogandiv{
+    font-style: italic;  
+    font-family: 'Sacramento', cursive;
+    padding-top: 0px;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.mainmid{
+    
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 153, 255, 0.445) ;
+
+
+}
+#explication{
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+main .blockex{
+    display:inline-flex;
+    margin-top: 10px;
+    max-width: 1420px ;
+
+}
+main .block-text{
+    padding: 0 20px;
+
+
+}
+
+main .g{
+    background: rgba(128, 128, 128, 0.363);
+    padding: 3px 3px;
+
+}
+
+main .b{
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 3px 3px;
+    background-color: #dfdfdf;
+}
+
+.zoom img:hover{
+    height: 250px;
+    width: auto;
+
+}
+
+
+main .mainmid #explication{
+    font-size: xx-large;
+    font-style: bold;
+}
+
+.mainmidimage{
+    margin: 0 1% ;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.chiant img{
+    height:310px;
+    width:auto ;
+    transition: all 2s;
+}
+
+
+button{
+    background-color: #066899; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+main .mainmidimage div{
+    padding-top: 50px;
+    font-size: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+@media (max-width : 700px){
+     
+        .chiant img{ 
+            width:100% ;
+
+    }
+    .topoftop{
+        flex-direction: column;
+        text-align: center;
+    }
+    main .title{
+        padding-left: 0;
+    }
+
+    .blockex{
+        flex-direction: column;
+        text-align: center;
+    }
+    .b{
+        width: 100%;
+
+    }
+
+    b img:hover{
+        width: 200px;
+        height: auto;
+        margin-left: -100px;
+
+    }
+
+}

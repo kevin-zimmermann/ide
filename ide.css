@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+
+.top{
+    background: rgb(2, 2, 2);
+}
+
+.logo-top{
+    text-align: center;
+}
+
+.logo-top i{
+    padding:15px 0 ;
+    font-size: 100px;
+    color:white;
+}
+
+header nav{
+    background-color:grey;
+    text-decoration: white;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+    
+}
+header nav li:hover{
+    background-color:rgb(163, 159, 159);
+}
+
+header{
+    position: sticky;
+    top: -146px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 10px; 
+    font-size: x-large;
+    font-family: 'Bebas Neue', cursive;
+}
+header nav ul{
+    line-height: 50px;
+    padding: 0;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 3px;
+
+}
+
+
+.is-active{
+    background-color:rgb(163, 159, 159);
+}
+
+
+a{
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+   
+
+}
+h1{
+    text-decoration:none;
+    color: black;
+}
+
+
+
+main .block-total{
+        display: flex;
+        flex-wrap: wrap;
+
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+main .block-one{
+    width: 50%;
+    padding-bottom:10px;
+    flex: 50%;
+
+}
+
+.block-total .block-one:nth-child(odd){
+    padding-right: 10px;
+
+}
+
+main .block-two{
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    height: 100%;
+    background-color:  white;
+
+
+
+
+}
+main .block-bottom{
+    width: 50%;
+    text-align: center;
+    margin: 0 25%;
+}
+main .block-photo{
+     margin-left: 0px;
+     display: inline-flex;
+
+
+}
+main .block-photo:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+
+.logo{
+    margin: 10px 10px;
+
+}
+
+main .description{
+    display: inline;
+    vertical-align: top;
+}
+
+.definir{
+ font-family: cursive;
+ font-size: 13px;
+ margin: 0 10px 10px 10px;
+
+}
+
+footer{
+    background-color:grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+
+}
+
+@media screen and (max-width: 600px) {
+    .block-photo,.block-total{
+      flex-direction: column;
+
+    }
+    .block-total div{
+        width: 100%;
+        text-align: center;
+       
+    }
+    .block-total{
+        margin: 0 25px;
+    }
+    .block-total .block-one:nth-child(odd){
+        padding-right: 0px;
+    
+    }
+  }
